@@ -28,18 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEntregas));
+            label1 = new Label();
             SuspendLayout();
             // 
-            // Entregas
+            // label1
+            // 
+            label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(140, 314);
+            label1.Name = "label1";
+            label1.Size = new Size(558, 46);
+            label1.TabIndex = 0;
+            label1.Text = "Serviço indisponível no momento";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // FormEntregas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(800, 450);
-            Name = "Entregas";
+            Controls.Add(label1);
+            Name = "FormEntregas";
             Text = "Entregas";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Label label1;
     }
 }

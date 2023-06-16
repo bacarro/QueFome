@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // Configurações
+            // FormConfigurações
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Chocolate;
+            BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(800, 450);
-            Name = "Configurações";
+            Name = "FormConfigurações";
             Text = "Configurações";
             ResumeLayout(false);
         }

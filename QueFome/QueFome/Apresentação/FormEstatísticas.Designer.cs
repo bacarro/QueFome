@@ -30,12 +30,14 @@
         {
             SuspendLayout();
             // 
-            // Estatísticas
+            // FormEstatísticas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.estatistica;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
-            Name = "Estatísticas";
+            Name = "FormEstatísticas";
             Text = "Estatísticas";
             ResumeLayout(false);
         }

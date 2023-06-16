@@ -5,7 +5,6 @@ C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.AssemblyInfoInputs.cache
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.AssemblyInfo.cs
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.csproj.CoreCompileInputs.cache
-C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.Form1.resources
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\bin\Debug\net6.0-windows\QueFome.exe
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\bin\Debug\net6.0-windows\QueFome.deps.json
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\bin\Debug\net6.0-windows\QueFome.runtimeconfig.json
@@ -25,3 +24,4 @@ C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.FormMarketing.resources
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.FormProdutos.resources
 C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.FormVendas.resources
+C:\Users\mathe\OneDrive\Área de Trabalho\Faculdade\PI\QueFome\QueFome\obj\Debug\net6.0-windows\QueFome.FormMenu.resources

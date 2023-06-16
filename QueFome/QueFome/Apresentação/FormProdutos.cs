@@ -12,6 +12,10 @@ namespace QueFome
 {
     public partial class FormProdutos : Form
     {
+        /* static string caminhoBancoDados = AppDomain.CurrentDomain.BaseDirectory + "dados/";
+         string arquivo = caminhoBancoDados + "Produtos.txt";
+         string separadorColuna = "|"; */
+
         public FormProdutos()
         {
             InitializeComponent();
@@ -93,7 +97,7 @@ namespace QueFome
 
         private void lv_produto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(lv_produto.SelectedItems.Count > 0)
+            if (lv_produto.SelectedItems.Count > 0)
             {
                 obter();
             }
@@ -114,8 +118,6 @@ namespace QueFome
             }
             public static List<Produtos> GetListaProdutos()
             {
-                //Instanciar um objeto Lista de produto
-
                 var listaProdutos = new List<Produtos>();
 
                 listaProdutos.Add(new Produtos(1, "Combo", "3 SANDUÍCHES + 3 MCFRITAS MÉDIAS", 66.00M));
@@ -142,7 +144,7 @@ namespace QueFome
         }
         private void ListViewSort(ListView listView, int coluna, bool ascendente)
         {
-            if(listView == null) return;
+            if (listView == null) return;
 
             ListView lstView = listView as ListView;
             int col = coluna;
@@ -176,5 +178,53 @@ namespace QueFome
             decimal result;
             return (decimal.TryParse(Text, out result));
         }
+
+        private void icon_pesquisar_Click(object sender, EventArgs e)
+        {
+            BuscarProduto();
+        }
+        private void BuscarProduto()
+        {
+            foreach (ListViewItem item in lv_produto.Items)
+            {
+                if (item.SubItems[2].Text.ToLower().Contains(txt_procurar.Text.ToLower()))
+                {
+                    lv_produto.Focus();
+                    item.Selected = true;
+                    lv_produto.TopItem = item;
+                    break;
+                }
+            }
+        }
+
+        /*  private void FormProdutos_Load(object sender, EventArgs e)
+          {
+              if (File.Exists(arquivo))
+              {
+                  using (StreamReader fluxoLeitura = new StreamReader(arquivo))
+                  {
+                      int totalLinhas = 0;
+                      string linha;
+
+                      while ((linha = fluxoLeitura.ReadLine()) != null)
+                      {
+                          Console.WriteLine(linha);
+                          //MessageBox.Show(linha);
+
+                          string[] partes = linha.Split(Convert.ToChar(separadorColuna));
+
+                          //lv_produto.Rows.Add(partes[0], partes[1], partes[2], partes[3]);
+                          lv_produto.Items[0].SubItems[1].Text = "my data";
+
+                          totalLinhas++;
+                          //totalLinhas = totalLinhas + 1;
+                      }
+                      fluxoLeitura.Close();
+
+                      Console.WriteLine("Encontradas " + totalLinhas + " linhas.");
+                      MessageBox.Show("Encontradas " + totalLinhas + " linhas.");
+                  }
+              }
+         } */
     }
 }

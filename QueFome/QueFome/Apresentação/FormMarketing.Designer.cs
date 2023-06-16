@@ -30,14 +30,16 @@
         {
             SuspendLayout();
             // 
-            // Marketing
+            // FormMarketing
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SaddleBrown;
+            BackColor = SystemColors.ActiveCaptionText;
+            BackgroundImage = Properties.Resources.promoção;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             ForeColor = SystemColors.ControlText;
-            Name = "Marketing";
+            Name = "FormMarketing";
             Text = "Marketing";
             ResumeLayout(false);
         }
